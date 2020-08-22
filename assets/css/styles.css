@@ -220,6 +220,25 @@ section.pricing {
   background-size: cover;
 }
 
+.card-body{
+  padding: 0.75rem;
+}
+
+@media (max-width:800px){
+  .lista-festa{
+      display: none;
+  }
+  .card-body{
+    padding: 0.50rem;
+    margin-bottom: 1rem;
+  }
+  .pricing .btn{
+    font-size: 60%;
+  }
+  .btn{
+  margin-right: 0rem;
+  }
+}
 
 /*
 * Footer
