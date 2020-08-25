@@ -8,12 +8,15 @@
 
 
 /** BG - Static */
-#hero-bg-static {
+/* #hero-bg-static {
   background-image: url("../images/Sal_fundo.jpg");
-}
+} */
 
 #botaoCompra{
-  margin-top: 4.5rem!important;
+  margin-top: 25.5rem!important;
+}
+#botaoVejaMais{
+  margin-top: 2.5rem!important;
 }
 /** BG - Parallax */
 #hero-bg-parallax > .bg-img-parallax {
@@ -209,7 +212,58 @@ section.pricing {
   background-image: url("../images/bg-ticket.jpg");
 }
 
+.v-header{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
 
+.container{
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.videotelacheia{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-overlay{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.header-content{
+  z-index: 2;
+}
+
+.header-content a{
+  margin-bottom: 0;
+}
+
+.videotelacheia video{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#videoBG{
+  position: absolute;
+  z-index: -1;
+  
+}
 /*
 * Register
 */
@@ -238,6 +292,7 @@ section.pricing {
   .btn{
   margin-right: 0rem;
   }
+
 }
 
 /*
