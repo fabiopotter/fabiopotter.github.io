@@ -68,8 +68,9 @@
 * Festas
 */
 section.pricing {
-  background-image: url(../images/sand.jpg);
- 
+  background-image: url(../images/sand.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -269,7 +270,7 @@ section.pricing {
 */
 
 #register {
-  background-image: url("../images/sand.jpg");
+  background-image: url("../images/sand.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -292,7 +293,13 @@ section.pricing {
   .btn{
   margin-right: 0rem;
   }
+  
+  #imgLocal{
+    width: 90%;
+    height: 90%;
+  }
 
+  
 }
 
 /*
