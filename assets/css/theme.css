@@ -1050,6 +1050,12 @@ label.error {
 .gallery-grid figure a {
   cursor: url("../img/icon-zoom-in-white.png"), pointer; }
 
+.gallery-img{
+  border-radius: 100%/0 0 30px 30px;
+  box-shadow: 0px 6px 0px white;
+  justify-items: center;
+}
+
 /*
 * Gallery - Magnific popup
 */
