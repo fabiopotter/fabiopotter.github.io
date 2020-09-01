@@ -7,6 +7,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && filter_var($_POST['email'
 {
     // Collect POST data from form
     $name = $_POST['name'];
+    $tel = $_POST['tel'];
     $email = $_POST['email'];
     $select_subject = $_POST['subject'];
     $message = $_POST['message'];
@@ -37,7 +38,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && filter_var($_POST['email'
 
     // Send the message
     $send = false;
-    if (mail($mail_to, $subject, $content, $headers))
+    if (mail($mail_to, 'Informação SAL', $content, $headers))
     {
         $send = true;
     }
