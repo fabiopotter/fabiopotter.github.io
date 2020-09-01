@@ -183,6 +183,10 @@ body::-webkit-scrollbar {
     margin-top: 15.5rem!important;
   }
 
+  .logo-festa{
+    width: 9vw!important;
+  }
+
 }
 
 .w-20 {
@@ -320,6 +324,11 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 90%;
   }
+
+  .logo-festa{
+    width: 20vw;
+  }
+
 
   .logos{
     margin-top: 15.5rem!important;
