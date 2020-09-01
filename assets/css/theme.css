@@ -1051,8 +1051,7 @@ label.error {
   cursor: url("../img/icon-zoom-in-white.png"), pointer; }
 
 .gallery-img{
-  border-radius: 100%/0 0 30px 30px;
-  box-shadow: 0px 6px 0px white;
+ border-radius: 40px 40px;
   justify-items: center;
 }
 
