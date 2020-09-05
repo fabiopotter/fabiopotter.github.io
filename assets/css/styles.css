@@ -112,6 +112,11 @@ section.pricing {
 
 .pricing ul li {
   margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+
+.data-festa{
+  padding-left: 6.0rem;
 }
 
 .pricing .text-muted {
@@ -305,6 +310,10 @@ body::-webkit-scrollbar {
   padding: 0.75rem;
 }
 
+.lista-festa{
+align-items: center;
+}
+
 @media (max-width:820px){
   /* .lista-festa{
       display: none;
@@ -334,6 +343,18 @@ body::-webkit-scrollbar {
     margin-top: 15.5rem!important;
   }
   
+  .title-small{
+    font-size: 0.8rem !important;
+  }
+
+  .pricing ul li {
+    margin-bottom: 1rem;
+    margin-left: 0.45rem!important;
+  }
+  .data-festa{
+    padding-left: 3.2rem;
+  }
+
 }
 
 /*
