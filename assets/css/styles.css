@@ -355,6 +355,15 @@ align-items: center;
     padding-left: 3.2rem;
   }
 
+  #data-sal{
+    padding-left: 7px;
+  }
+  #data-prainha{
+    padding-left: 155px;
+  }
+  #lista-prainha{
+    padding-left: 100px;
+  }
 }
 
 /*
