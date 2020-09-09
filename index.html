@@ -510,32 +510,33 @@
                             <span class="d-block font-alt font-w-600 letter-spacing-1 mt-2 text-gray-800 text-small text-uppercase">Ingressos e lotes limitados, não fique de fora!</span>
                             <span class="bg-dark d-block mt-4 sep-line-medium-thick-long"></span>
                             
-                            <form action="contact/send_mail_ticket.php" method="post" id="form-register" class="mt-4">
+                            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdA151D47Lr53QnWXZ64GqmsdVDw77Oh1_Rxc7pK66zzbIT9w/formResponse?" target="hidden_iframe" onsubmit="submitted=true;" class="mt-4">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="font-alt form-control required" id="register-name" placeholder="Nome Completo*">
+                                    <input type="text" name="entry.100988366" class="font-alt form-control required" id="register-name" placeholder="Nome Completo*">
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" pattern=".{11}" oninput="check(this)" class="font-alt form-control required" id="telefone" placeholder="Telefone">
+                                    <input type="tel" pattern=".{11}" oninput="check(this)" name="entry.889457680" class="font-alt form-control required" id="telefone" placeholder="Telefone">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="instagram" class="font-alt form-control required" id="register-name" placeholder="Instagram">
+                                    <input type="text" name="entry.1394138011" class="font-alt form-control required" id="register-name" placeholder="Instagram">
                                 </div>
                                 <!-- //.form-group -->
 
                                 <div class="form-group">
-                                    <input type="email" name="email" class="font-alt form-control required email" id="register-email" placeholder="Email*">
+                                    <input type="email" name="entry.1846482543" class="font-alt form-control required email" id="register-email" placeholder="Email*">
                                 </div>
                                 <!-- //.form-group -->
 
                     
                                 <div class="form-group">
-                                    <textarea name="message" class="font-alt form-control required" id="register-message" rows="6" placeholder="Sua Dúvida"></textarea>
+                                    <textarea name="entry.2017240441" class="font-alt form-control required" id="register-message" rows="6" placeholder="Sua Dúvida"></textarea>
                                 </div>
                                 <!-- //.form-group -->
 
                                 <span class="d-block font-alt font-w-600 letter-spacing-1 text-extra-small text-uppercase">Por Favor, preencha todos os campos *</span>
                                 <button type="submit" id="btn-form-register" class="btn btn-small btn-lg-medium btn-dark mt-4">Enviar</button>
                             </form>
+                            <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe> -->
                         </div>
                         <!-- //.bg-white -->
                     </div>
@@ -620,5 +621,12 @@
         <!-- Theme JS -->
         <script src="assets/js/theme.js"></script>
         
+        <!-- Google Form  -->
+        <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+          $('#gform *').fadeOut(2000);
+          });
+        </script>
+
     </body>
 </html>

@@ -57,6 +57,7 @@
    
     $window.on('load', function(){
         
+        var submitted=false;
         /** Bootstrap scrollspy */
         var ww = Math.max($window.width(), window.innerWidth);
         $body.scrollspy({    
@@ -264,6 +265,7 @@
             });
         }
         
+       
         
         /** BG Parallax */
         if (typeof ScrollMagic !== 'undefined'){
