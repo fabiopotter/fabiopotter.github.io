@@ -82,6 +82,7 @@ section.pricing {
   width: 150px;
   align-content: center;
   margin-left: 2.5em;
+  height: 140px;
 }
 .pricing .card {
   border: none;
@@ -222,18 +223,15 @@ body::-webkit-scrollbar {
 * Section - Venue
 */
 
-#venue {
-  background-image: url("../images/bg-venue.jpg");
+
+.fonte-nova{
+  font-family: 'Gayathri', sans-serif;
 }
-
-
 /*
 * Promo
 */
 
-#promo {
-  background-image: url("../images/bg-promo.jpg");
-}
+
 
 .classe-video{
   display: none!important;
@@ -242,9 +240,6 @@ body::-webkit-scrollbar {
 * Ticket
 */
 
-#ticket {
-  background-image: url("../images/bg-ticket.jpg");
-}
 
 .v-header{
   height: 100vh;
@@ -317,7 +312,12 @@ align-items: center;
 margin-left: 0px;
 }
 
-@media (max-width:820px){
+#card-combo{
+  max-width: 60vw;
+  margin-left: 20.5vw;
+}
+
+@media (max-width:800px){
   /* .lista-festa{
       display: none;
   } */
@@ -339,8 +339,34 @@ margin-left: 0px;
 
   .logo-festa{
     width: 20vw;
+    height: 14vh;
   }
 
+
+
+  #card-prainha{
+    max-width: 60vw;
+    margin-left: 4rem!important;
+    
+  }
+
+  #card-combo{
+    max-width: 80vw;
+    margin-left: 16vw;
+  }
+
+  .logo-festa-combo{
+    display: none!important;
+  }
+  #texto-passporte{
+    display: inline!important;
+    margin-left: 15vw!important;
+    margin-top: 3vh!important;
+  }
+
+  #lista-prainha{
+    padding-left: 0px!important;
+  }
   .classe-video{
     display: none!important;
   }
