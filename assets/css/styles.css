@@ -314,6 +314,7 @@ body::-webkit-scrollbar {
 
 .lista-festa{
 align-items: center;
+margin-left: 0px;;
 }
 
 @media (max-width:820px){
@@ -357,7 +358,7 @@ align-items: center;
     margin-left: 0.45rem!important;
   }
   .data-festa{
-    padding-left: 3.2rem;
+    padding-left: 9.2vw;
   }
 
   #data-sal{
