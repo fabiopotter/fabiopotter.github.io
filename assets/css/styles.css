@@ -235,7 +235,9 @@ body::-webkit-scrollbar {
   background-image: url("../images/bg-promo.jpg");
 }
 
-
+.classe-video{
+  display: none!important;
+}
 /*
 * Ticket
 */
@@ -338,6 +340,9 @@ align-items: center;
     width: 20vw;
   }
 
+  .classe-video{
+    display: none!important;
+  }
 
   .logos{
     margin-top: 15.5rem!important;
@@ -364,14 +369,17 @@ align-items: center;
   #lista-prainha{
     padding-left: 100px;
   }
+  
+  #horario-inc{
+    font-size: 0.9rem;
+  }
 }
-
 /*
 * Footer
 */
 
 .footer-logo {
-  max-height: 40px;
+  max-height: 40px!important;
 }
 
 .footer-icon-social {
@@ -395,4 +403,5 @@ align-items: center;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+}
 }

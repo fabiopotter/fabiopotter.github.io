@@ -63,6 +63,46 @@
             target: '#navigation',
             offset: ww > 992 ? navHeightShrink : navHeight
         });
+
+        if ($window.width() > 900) {
+
+            $('#reveillon-video').removeClass('col-12');
+            $('#reveillon-video').removeClass('col-4');
+
+            $('#reveillon-texto').removeClass('col-12');
+            $('#reveillon-texto').removeClass('col-8');
+
+            $('#reveillon-texto').addClass('col-8');
+            $('#reveillon-video').addClass('col-4');
+
+            $('#festa-video').removeClass('col-12');
+            $('#festa-video').removeClass('col-4');
+
+            $('#festa-texto').removeClass('col-12');
+            $('#festa-texto').removeClass('col-8');
+
+
+            $('#festa-texto').addClass('col-8');
+            $('#festa-video').addClass('col-4');
+
+            $('#festa-video-2').removeClass('classe-video');
+            $('#festa-video-2').addClass('classe-video');
+
+
+        
+          } else {
+            $('#reveillon-video').removeClass('col-4');
+            $('#reveillon-video').addClass('col-12');
+            $('#reveillon-texto').removeClass('col-8');
+            $('#reveillon-texto').addClass('col-12');
+
+            $('#festa-video').removeClass('col-4');
+            $('#festa-video').addClass('col-12');
+            $('#festa-texto').removeClass('col-8');
+            $('#festa-texto').addClass('col-12');
+          }
+
+
     });
     
     
@@ -119,6 +159,48 @@
             if ($.fn.isotope){
                 $galleryGrid.isotope('layout');
             }
+
+            if ($window.width() > 900) {
+
+                $('#reveillon-video').removeClass('col-12');
+                $('#reveillon-video').removeClass('col-4');
+
+                $('#reveillon-texto').removeClass('col-12');
+                $('#reveillon-texto').removeClass('col-8');
+
+                $('#reveillon-texto').addClass('col-8');
+                $('#reveillon-video').addClass('col-4');
+
+                $('#festa-video').removeClass('col-12');
+                $('#festa-video').removeClass('col-4');
+    
+                $('#festa-texto').removeClass('col-12');
+                $('#festa-texto').removeClass('col-8');
+    
+    
+                $('#festa-texto').addClass('col-8');
+                $('#festa-video').addClass('col-4');
+
+                $('#festa-video').removeClass('classe-video');
+                $('#festa-video-2').addClass('classe-video');
+
+            
+              } else {
+                $('#reveillon-video').removeClass('col-4');
+                $('#reveillon-video').addClass('col-12');
+                $('#reveillon-texto').removeClass('col-8');
+                $('#reveillon-texto').addClass('col-12');
+
+                $('#festa-video').removeClass('col-4');
+                $('#festa-video').addClass('col-12');
+                $('#festa-texto').removeClass('col-8');
+                $('#festa-texto').addClass('col-12');
+
+                $('#festa-video-2').removeClass('classe-video');
+                $('#festa-video').addClass('classe-video');
+
+              }
+
         });
         
         
