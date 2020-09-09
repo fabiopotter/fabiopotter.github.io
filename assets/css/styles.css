@@ -342,11 +342,13 @@ margin-left: 0px;
     height: 14vh;
   }
 
-
+ #texto-ddp{
+   font-size: 80%;
+ }
 
   #card-prainha{
-    max-width: 60vw;
-    margin-left: 4rem!important;
+    max-width: 80vw;
+    /*margin-left: 4rem!important;*/
     
   }
 
