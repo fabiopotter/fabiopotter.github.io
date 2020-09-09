@@ -314,7 +314,7 @@ body::-webkit-scrollbar {
 
 .lista-festa{
 align-items: center;
-margin-left: 0px;;
+margin-left: 0px;
 }
 
 @media (max-width:820px){
@@ -381,6 +381,9 @@ margin-left: 0px;;
 
 .footer-logo {
   max-height: 40px!important;
+}
+.footer-logo2 {
+  max-height: 60px!important;
 }
 
 .footer-icon-social {
