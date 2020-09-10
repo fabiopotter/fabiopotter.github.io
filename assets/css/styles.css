@@ -357,6 +357,9 @@ margin-left: 0px;
     margin-left: 16vw;
   }
 
+  #linha-logos{
+    display: none!important;
+  }
   .logo-festa-combo{
     display: none!important;
   }
