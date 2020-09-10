@@ -362,7 +362,7 @@ margin-left: 0px;
   }
   #texto-passporte{
     display: inline!important;
-    margin-left: 15vw!important;
+    margin-left: 20vw!important;
     margin-top: 3vh!important;
   }
 
@@ -402,6 +402,11 @@ margin-left: 0px;
   #horario-inc{
     font-size: 0.9rem;
   }
+
+  .pricing hr {
+    margin: 0.5rem 0;
+}
+
 }
 /*
 * Footer
