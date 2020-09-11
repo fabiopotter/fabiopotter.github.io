@@ -487,13 +487,12 @@ body, html {
       box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
 
 .btn-outline-white {
-  color: #ffffff;
-  background-color: transparent;
+  color: black;
+  background-color: white;
   background-image: none;
   border-color: #ffffff; }
   .btn-outline-white:hover {
     color: #fff;
-    background-color: #ffffff;
     border-color: #ffffff; }
   .btn-outline-white:focus, .btn-outline-white.focus {
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
