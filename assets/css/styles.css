@@ -316,6 +316,9 @@ margin-left: 0px;
   max-width: 60vw;
   margin-left: 20.5vw;
 }
+#texto-sal{
+  padding-left: 20px;
+}
 
 @media (max-width:800px){
   /* .lista-festa{
@@ -338,7 +341,7 @@ margin-left: 0px;
   }
 
   .logo-festa{
-    width: 20vw;
+    width: 23vw;
     height: 14vh;
   }
 
@@ -394,6 +397,11 @@ margin-left: 0px;
 
   #data-sal{
     padding-left: 7px;
+    
+  }
+  #texto-sal{
+    padding-left: 7px;
+    font-size: 0.65rem!important;
   }
   #data-prainha{
     padding-left: 155px;
