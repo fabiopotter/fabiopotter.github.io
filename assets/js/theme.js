@@ -65,6 +65,13 @@
             offset: ww > 992 ? navHeightShrink : navHeight
         });
 
+
+
+    new FlipDown(1609459200, {
+        theme: "light",
+      }).start();
+
+
         if ($window.width() > 900) {
 
             $('#reveillon-video').removeClass('col-12');
@@ -309,6 +316,9 @@
             }
         }
         
+
+        
+
         
         /** BG Slideshow */
         if ($.fn.flexslider){
@@ -359,80 +369,8 @@
         }
         
         
-        /** Countdown */
-        if ($.fn.countdown){
-            var $clock = $('#clock'),
-                untilDate = $clock.data('until-date');
-
-            $clock.countdown(untilDate, function(e){
-                $(this).html(e.strftime(''
-                    + '<div class="clock-item p-3 text-center"><span class="d-block font-alt font-w-600 letter-spacing-1 text-uppercase text-white text-small title-md-small">%D</span><span class="d-block font-alt font-w-600 letter-spacing-1 mt-1 text-uppercase text-white text-extra-small">Days</span></div>'
-                    + '<div class="clock-item ml-1 ml-sm-2 p-3 text-center"><span class="d-block font-alt font-w-600 letter-spacing-1 text-uppercase text-white text-small title-md-small">%H</span><span class="d-block font-alt font-w-600 letter-spacing-1 mt-1 text-uppercase text-white text-extra-small">Hr</span></div>'
-                    + '<div class="clock-item ml-1 ml-sm-2 p-3 text-center"><span class="d-block font-alt font-w-600 letter-spacing-1 text-uppercase text-white text-small title-md-small">%M</span><span class="d-block font-alt font-w-600 letter-spacing-1 mt-1 text-uppercase text-white text-extra-small">Min</span></div>'
-                    + '<div class="clock-item ml-1 ml-sm-2 p-3 text-center"><span class="d-block font-alt font-w-600 letter-spacing-1 text-uppercase text-white text-small title-md-small">%S</span><span class="d-block font-alt font-w-600 letter-spacing-1 mt-1 text-uppercase text-white text-extra-small">Sec</span></div>'));
-            });
-        }
         
         
-        /** Form - Register */
-        var $formRegister = $('#form-register'),
-            $btnFormRegister = $('#btn-form-register');
-        
-        $btnFormRegister.on('click', function(e){
-            $formRegister.validate();
-            if ($formRegister.valid()){
-                send_mail($formRegister, $btnFormRegister);
-            }
-            e.preventDefault();
-        });
-        
-        /** Form - Contact */
-        var $formContact = $('#form-contact'),
-            $btnFormContact = $('#btn-form-contact');
-        
-        $btnFormContact.on('click', function(e){
-            $formContact.validate();
-            if ($formContact.valid()){
-                send_mail($formContact, $btnFormContact);
-            }
-            e.preventDefault();
-        });
-        
-        // Send mail
-        function send_mail($form, $btnForm){
-            var defaultMessage = $btnForm.html(),
-                sendingMessage = 'Loading...',
-                errorMessage = 'Error Sending!',
-                okMessage = 'Email Sent!';
-            
-            $btnForm.html(sendingMessage);
-            
-            $.ajax({
-                url: $form.attr('action'),
-                type: 'post',
-                dataType: 'json',
-                data: $form.serialize(),
-                success: function(data){
-                    if (data === true){
-                        $btnForm.html(okMessage);
-                        $form.find('input[type="text"], input[type="email"], textarea').val('');
-                    }
-                    else{
-                        $btnForm.html(errorMessage);
-                    }
-
-                    setTimeout(function(){
-                        $btnForm.html(defaultMessage);
-                    }, 3000);
-                },
-                error: function(xhr, err){
-                    $btnForm.html(errorMessage);
-
-                    setTimeout(function(){
-                        $btnForm.html(defaultMessage);
-                    }, 3000);
-                }
-            });
-        }
+     
     });
 })(jQuery);
