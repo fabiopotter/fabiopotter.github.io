@@ -67,9 +67,9 @@
 
 
 
-    new FlipDown(1609459200, {
-        theme: "light",
-      }).start();
+     new FlipDown(1609459200, {
+         theme: "light",
+       }).start();
 
 
         if ($window.width() > 900) {

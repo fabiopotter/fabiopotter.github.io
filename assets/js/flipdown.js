@@ -151,7 +151,7 @@ class FlipDown {
    * @author PButcher
    **/
   _parseOptions(opt) {
-    let headings = ["Dias", "Horas", "Minutos", "Segundos"];
+    let headings = ["Dias", "Horas", "Min.", "Seg."];
     if (opt.headings && opt.headings.length === 4) {
       headings = opt.headings;
     }

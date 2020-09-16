@@ -296,7 +296,9 @@ body::-webkit-scrollbar {
 /*
 * Register
 */
-
+.logo-festa-combo{
+  height: 14vh!important;
+}
 #register {
   background-image: url("../images/sand.png");
   background-repeat: no-repeat;
