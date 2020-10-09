@@ -293,6 +293,15 @@ body::-webkit-scrollbar {
   z-index: -1;
   
 }
+
+.img-compra{
+  border-radius: 25px;
+  border: 0.8px solid black;
+  padding: 20px;
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
+}
+
 /*
 * Register
 */
