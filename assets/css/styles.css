@@ -185,6 +185,8 @@ body::-webkit-scrollbar {
     opacity: 1;
   }
 
+  
+
   .logos{
     margin-top: 15.5rem!important;
   }
@@ -320,7 +322,7 @@ body::-webkit-scrollbar {
 
 .lista-festa{
 align-items: center;
-margin-left: 0px;
+margin-left: 10vw;
 }
 
 #card-combo{
@@ -413,7 +415,9 @@ margin-left: 0px;
 .espaco-maior{
   margin-bottom: 1.3rem;
 }
-
+#reveillon-foto{
+  display: none!important;
+}
   #imgLocal{
     width: 90%;
     height: 90%;
@@ -434,6 +438,9 @@ margin-left: 0px;
     
   }
 
+  #linha-reveillon{
+    margin-left: 18vw;
+  }
   #card-combo{
     max-width: 80vw;
     margin-left: 16vw;
